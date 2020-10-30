@@ -24,6 +24,4 @@ else
 
  fi
 
-my_function $var1
-#my_function $var2
 
