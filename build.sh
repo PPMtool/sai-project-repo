@@ -3,7 +3,7 @@
 var1='kiran'
 #var2='siva'
 GITHASH=$(git rev-parse HEAD)
-DOCKERAPPIMAGE=`docker images kiran | awk '{print $2}' | tail -n+2 `
+DOCKERAPPIMAGE=`docker images kiran | awk '{print $2}' | tail -n+2 | head -1`
 if [ $GITHASH == $DOCKERAPPIMAGE ]
 then
   #If they are equal then print this
